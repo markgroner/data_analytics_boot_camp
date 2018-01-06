@@ -1,0 +1,59 @@
+from flask import Flask, jsonify
+
+justice_league_members = [
+    {"superhero": "Aquaman", "real_name": "Arthur Curry"},
+    {"superhero": "Batman", "real_name": "Bruce Wayne"},
+    {"superhero": "Cyborg", "real_name": "Victor Stone"},
+    {"superhero": "Flash", "real_name": "Barry Allen"},
+    {"superhero": "Green Lantern", "real_name": "Hal Jordan"},
+    {"superhero": "Superman", "real_name": "Clark Kent/Kal-El"},
+    {"superhero": "Wonder Woman", "real_name": "Princess Diana"}
+]
+
+#################################################
+# Flask Setup
+#################################################
+app = Flask(__name__)
+
+
+#################################################
+# Flask Routes
+#################################################
+
+@app.route("/api/v1.0/justice-league")
+def justice_league():
+    """Return the justice league data as json"""
+
+    return jsonify(justice_league_members)
+
+
+@app.route("/")
+def welcome():
+    return (
+        f"Welcome to the Justice League API!<br/>"
+        f"Available Routes:<br/>"
+        f"/api/v1.0/justice-league<br/>"
+        f"/api/v1.0/justice-league/Arthur%20Curry<br/>"
+        f"/api/v1.0/justice-league/Bruce%20Wayne<br/>"
+        f"/api/v1.0/justice-league/Victor%20Stone<br/>"
+        f"/api/v1.0/justice-league/Barry%20Allen<br/>"
+        f"/api/v1.0/justice-league/Hal%20Jordan<br/>"
+        f"/api/v1.0/justice-league/Clark%20Kent/Kal-El<br/>"
+        f"/api/v1.0/justice-league/Princess%20Diana"
+    )
+
+
+"""TODO: Handle API route with variable path to allow getting info
+for a specific character based on their 'superhero' name """
+@app.route('/api/v1.0/justice-league/<name>')
+def hero_info(name):
+    test_name = name.replace(' ', '').lower()
+    raw_dict_values = justice_league_members.values()
+    normal_dict_values = [value.lower() for value in raw_dict_values]
+    ##if test_name in normal_dict_values:
+    position = normal_dict_values.index(test_name)
+    hero_name = justice_league_members[position]['superhero']
+    return hero_name
+
+if __name__ == "__main__":
+    app.run(debug=True)

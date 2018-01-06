@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color: orange;
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: green;
+}
+
+img {
+    box-shadow: 15px 15px purple;
+}
+
+section {
+  background-color: grey;
+}
+
+p {
+  font-size: 14px;
+}
+
+ul {
+    border-style: solid;
+    border-color: yellow;
+}
