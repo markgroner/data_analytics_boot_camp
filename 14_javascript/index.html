@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Marco Polo</title>
+  </head>
+  <body>
+    <script>
+      function marcoPolo(heardWord) {
+        if (heardWord.toLowerCase() === 'marco') {
+          console.log('Polo!');
+        }
+        else {
+          console.log('Try again!');
+        }
+      }
+
+      function respond(heardWord, callbackFunction) {
+        callbackFunction(heardWord)
+      }
+    </script>
+  </body>
+</html>

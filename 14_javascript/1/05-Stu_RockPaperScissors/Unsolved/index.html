@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock! Paper! Scissors!</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Randomly select the computers choice
+        var computerSelections = ["r", "p", "s"];
+        var computerChoice = computerSelections[Math.round(Math.random()*2)];
+        console.log(computerChoice);
+
+        // YOUR CODE HERE
+        var userChoice = prompt('Select (r)ock, (p)aper, or (s)cissors: ')
+        if (computerChoice === userChoice) {
+          alert('TIE!')
+        }
+        else if ((computerChoice === 'r')  && (userChoice === 'p')) {
+          alert('COMPUTER CHOSE ' + computerChoice + '. ' + 'YOU WIN!')
+        }
+        else if ((computerChoice === 'r')  && (userChoice === 's')) {
+          alert('COMPUTER CHOSE ' + computerChoice + '. ' + 'YOU LOSE!')
+        }
+        else if ((computerChoice === 'p')  && (userChoice === 'r')) {
+          alert('COMPUTER CHOSE ' + computerChoice + '. ' + 'YOU LOSE!')
+        }
+        else if ((computerChoice === 'p')  && (userChoice === 's')) {
+          alert('COMPUTER CHOSE ' + computerChoice + '. ' + 'YOU WIN!')
+        }
+        else if ((computerChoice === 's')  && (userChoice === 'r')) {
+          alert('COMPUTER CHOSE ' + computerChoice + '. ' + 'YOU WIN!')
+        }
+        else if ((computerChoice === 's')  && (userChoice === 'p')) {
+          alert('COMPUTER CHOSE ' + computerChoice + '. ' + 'YOU LOSE!')
+        }
+        else {
+          alert('INVALID INPUT')
+        }
+    </script>
+</body>
+</html>

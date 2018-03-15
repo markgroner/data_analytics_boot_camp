@@ -1,0 +1,2764 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook source-build='10.4.0 (10400.17.0915.2112)' source-platform='mac' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' inline='true' name='federated.087rvj91gvdcf814ygl9r1oirbcb' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='textscan.0rspkmh0kdbnyz14viaws0az3ylk'>
+            <connection class='textscan' directory='/Users/hlee/Desktop/trilogy_dataviz/Tableau/3/Activities/Solved/01-Stu_Healthcare' filename='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0rspkmh0kdbnyz14viaws0az3ylk' name='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv' table='[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Provider_Number' ordinal='0' />
+            <column datatype='string' name='Hospital_Name' ordinal='1' />
+            <column datatype='string' name='Address' ordinal='2' />
+            <column datatype='string' name='City' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='integer' name='ZIP_Code' ordinal='5' />
+            <column datatype='string' name='County_Name' ordinal='6' />
+            <column datatype='string' name='HBIPS-2_Measure_Description' ordinal='7' />
+            <column datatype='real' name='HBIPS-2_Overall_Rate_Per_1000' ordinal='8' />
+            <column datatype='real' name='HBIPS-2_Overall_Num' ordinal='9' />
+            <column datatype='integer' name='HBIPS-2_Overall_Den' ordinal='10' />
+            <column datatype='integer' name='HBIPS-2_Overall_Footnote' ordinal='11' />
+            <column datatype='string' name='HBIPS-3_Measure_Description' ordinal='12' />
+            <column datatype='real' name='HBIPS-3_Overall_Rate_Per_1000' ordinal='13' />
+            <column datatype='real' name='HBIPS-3_Overall_Num' ordinal='14' />
+            <column datatype='integer' name='HBIPS-3_Overall_Den' ordinal='15' />
+            <column datatype='integer' name='HBIPS-3_Overall_Footnote' ordinal='16' />
+            <column datatype='string' name='HBIPS-5_Measure_Description' ordinal='17' />
+            <column datatype='real' name='HBIPS-5_Overall_%_of_Total' ordinal='18' />
+            <column datatype='string' name='HBIPS-5_Overall_Num' ordinal='19' />
+            <column datatype='string' name='HBIPS-5_Overall_Den' ordinal='20' />
+            <column datatype='integer' name='HBIPS-5_Overall_Footnote' ordinal='21' />
+            <column datatype='string' name='HBIPS-6_Measure_Description' ordinal='22' />
+            <column datatype='real' name='HBIPS-6_Overall_%_of_Total' ordinal='23' />
+            <column datatype='integer' name='HBIPS-6_Overall_Num' ordinal='24' />
+            <column datatype='integer' name='HBIPS-6_Overall_Den' ordinal='25' />
+            <column datatype='integer' name='HBIPS-6_Overall_Footnote' ordinal='26' />
+            <column datatype='string' name='HBIPS-7_Measure_Description' ordinal='27' />
+            <column datatype='real' name='HBIPS-7_Overall_%_of_Total' ordinal='28' />
+            <column datatype='integer' name='HBIPS-7_Overall_Num' ordinal='29' />
+            <column datatype='integer' name='HBIPS-7_Overall_Den' ordinal='30' />
+            <column datatype='integer' name='HBIPS-7_Overall_Footnote' ordinal='31' />
+            <column datatype='string' name='SUB-1_Measure_Description' ordinal='32' />
+            <column datatype='string' name='SUB-1_%' ordinal='33' />
+            <column datatype='string' name='SUB-1_Numerator' ordinal='34' />
+            <column datatype='string' name='SUB-1_Denominator' ordinal='35' />
+            <column datatype='integer' name='SUB-1_Footnote' ordinal='36' />
+            <column datatype='string' name='TOB-1_Measure_Description' ordinal='37' />
+            <column datatype='real' name='TOB-1_%' ordinal='38' />
+            <column datatype='integer' name='TOB-1_Numerator' ordinal='39' />
+            <column datatype='integer' name='TOB-1_Denominator' ordinal='40' />
+            <column datatype='integer' name='TOB-1_Footnote' ordinal='41' />
+            <column datatype='string' name='TOB-2/-2a_Measure_Desc' ordinal='42' />
+            <column datatype='string' name='TOB-2_%' ordinal='43' />
+            <column datatype='string' name='TOB-2_Numerator' ordinal='44' />
+            <column datatype='string' name='TOB-2/-2a_Denominator' ordinal='45' />
+            <column datatype='integer' name='TOB-2_Footnote' ordinal='46' />
+            <column datatype='string' name='TOB-2a_%' ordinal='47' />
+            <column datatype='string' name='TOB-2a_Numerator' ordinal='48' />
+            <column datatype='string' name='TOB-2/-2a__Denominator' ordinal='49' />
+            <column datatype='integer' name='TOB-2a_Footnote' ordinal='50' />
+            <column datatype='string' name='PEoC_Measure_Description' ordinal='51' />
+            <column datatype='string' name='PEoC_Assessed_Response' ordinal='52' />
+            <column datatype='integer' name='PEoC_Assessed_Footnote' ordinal='53' />
+            <column datatype='string' name='EHR_Use_Measure_Description' ordinal='54' />
+            <column datatype='string' name='EHR_Use_Response' ordinal='55' />
+            <column datatype='integer' name='EHR_Use_Footnote' ordinal='56' />
+            <column datatype='string' name='HIE_Measure_Description' ordinal='57' />
+            <column datatype='string' name='HIE_Response' ordinal='58' />
+            <column datatype='integer' name='HIE_Footnote' ordinal='59' />
+            <column datatype='date' name='Start_Date' ordinal='60' />
+            <column datatype='date' name='End_Date' ordinal='61' />
+            <column datatype='string' name='FUH_Measure_Description' ordinal='62' />
+            <column datatype='string' name='FUH-30_%' ordinal='63' />
+            <column datatype='string' name='FUH-30_Numerator' ordinal='64' />
+            <column datatype='string' name='FUH-30_Denominator' ordinal='65' />
+            <column datatype='integer' name='FUH-30_Footnote' ordinal='66' />
+            <column datatype='string' name='FUH-7_%' ordinal='67' />
+            <column datatype='string' name='FUH-7_Numerator' ordinal='68' />
+            <column datatype='string' name='FUH-7_Denominator' ordinal='69' />
+            <column datatype='integer' name='FUH-7_Footnote' ordinal='70' />
+            <column datatype='date' name='FUH_Measure_Start_Date' ordinal='71' />
+            <column datatype='date' name='FUH_Measure_End_Date' ordinal='72' />
+            <column datatype='string' name='IMM-2_Measure_Description' ordinal='73' />
+            <column datatype='string' name='IMM-2_%' ordinal='74' />
+            <column datatype='string' name='IMM-2_Numerator' ordinal='75' />
+            <column datatype='string' name='IMM-2_Denominator' ordinal='76' />
+            <column datatype='integer' name='IMM-2_Footnote' ordinal='77' />
+            <column datatype='string' name='HCP_Measure_Description' ordinal='78' />
+            <column datatype='string' name='HCP_%' ordinal='79' />
+            <column datatype='string' name='HCP_Numerator' ordinal='80' />
+            <column datatype='string' name='HCP_Denominator' ordinal='81' />
+            <column datatype='integer' name='HCP_Footnote' ordinal='82' />
+            <column datatype='date' name='Flu_Season_Start_Date' ordinal='83' />
+            <column datatype='date' name='Flu_Season_End_Date' ordinal='84' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Provider_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Provider_Number]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>Provider_Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital_Name]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>Hospital_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>Address</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP_Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP_Code]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>ZIP_Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County_Name]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>County_Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-2_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-2_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-2_Measure_Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-2_Overall_Rate_Per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-2_Overall_Rate_Per_1000]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-2_Overall_Rate_Per_1000</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-2_Overall_Num</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-2_Overall_Num]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-2_Overall_Num</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-2_Overall_Den</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-2_Overall_Den]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-2_Overall_Den</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-2_Overall_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-2_Overall_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-2_Overall_Footnote</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-3_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-3_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-3_Measure_Description</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-3_Overall_Rate_Per_1000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-3_Overall_Rate_Per_1000]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-3_Overall_Rate_Per_1000</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-3_Overall_Num</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-3_Overall_Num]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-3_Overall_Num</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-3_Overall_Den</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-3_Overall_Den]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-3_Overall_Den</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-3_Overall_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-3_Overall_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-3_Overall_Footnote</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-5_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-5_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-5_Measure_Description</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-5_Overall_%_of_Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-5_Overall_%_of_Total]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-5_Overall_%_of_Total</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-5_Overall_Num</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-5_Overall_Num]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-5_Overall_Num</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-5_Overall_Den</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-5_Overall_Den]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-5_Overall_Den</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-5_Overall_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-5_Overall_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-5_Overall_Footnote</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-6_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-6_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-6_Measure_Description</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-6_Overall_%_of_Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-6_Overall_%_of_Total]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-6_Overall_%_of_Total</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-6_Overall_Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-6_Overall_Num]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-6_Overall_Num</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-6_Overall_Den</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-6_Overall_Den]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-6_Overall_Den</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-6_Overall_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-6_Overall_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-6_Overall_Footnote</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-7_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HBIPS-7_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-7_Measure_Description</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-7_Overall_%_of_Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HBIPS-7_Overall_%_of_Total]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-7_Overall_%_of_Total</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-7_Overall_Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-7_Overall_Num]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-7_Overall_Num</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-7_Overall_Den</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-7_Overall_Den]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-7_Overall_Den</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HBIPS-7_Overall_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HBIPS-7_Overall_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HBIPS-7_Overall_Footnote</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB-1_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUB-1_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>SUB-1_Measure_Description</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB-1_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUB-1_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>SUB-1_%</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB-1_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUB-1_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>SUB-1_Numerator</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB-1_Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUB-1_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>SUB-1_Denominator</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB-1_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SUB-1_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>SUB-1_Footnote</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-1_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-1_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-1_Measure_Description</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-1_%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOB-1_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-1_%</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-1_Numerator</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOB-1_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-1_Numerator</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-1_Denominator</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOB-1_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-1_Denominator</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-1_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOB-1_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-1_Footnote</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2/-2a_Measure_Desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2/-2a_Measure_Desc]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2/-2a_Measure_Desc</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2_%</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2_Numerator</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2/-2a_Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2/-2a_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2/-2a_Denominator</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOB-2_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2_Footnote</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2a_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2a_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2a_%</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2a_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2a_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2a_Numerator</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2/-2a__Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOB-2/-2a__Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2/-2a__Denominator</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOB-2a_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOB-2a_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>TOB-2a_Footnote</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEoC_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PEoC_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>PEoC_Measure_Description</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEoC_Assessed_Response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PEoC_Assessed_Response]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>PEoC_Assessed_Response</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEoC_Assessed_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PEoC_Assessed_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>PEoC_Assessed_Footnote</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EHR_Use_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EHR_Use_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>EHR_Use_Measure_Description</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EHR_Use_Response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EHR_Use_Response]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>EHR_Use_Response</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EHR_Use_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EHR_Use_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>EHR_Use_Footnote</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIE_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HIE_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HIE_Measure_Description</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIE_Response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HIE_Response]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HIE_Response</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIE_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HIE_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HIE_Footnote</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Start_Date]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>Start_Date</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[End_Date]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>End_Date</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH_Measure_Description</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-30_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH-30_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-30_%</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-30_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH-30_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-30_Numerator</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-30_Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH-30_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-30_Denominator</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-30_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FUH-30_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-30_Footnote</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-7_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH-7_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-7_%</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-7_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH-7_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-7_Numerator</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-7_Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUH-7_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-7_Denominator</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH-7_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FUH-7_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH-7_Footnote</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH_Measure_Start_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[FUH_Measure_Start_Date]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH_Measure_Start_Date</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUH_Measure_End_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[FUH_Measure_End_Date]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>FUH_Measure_End_Date</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMM-2_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IMM-2_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>IMM-2_Measure_Description</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMM-2_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IMM-2_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>IMM-2_%</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMM-2_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IMM-2_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>IMM-2_Numerator</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMM-2_Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IMM-2_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>IMM-2_Denominator</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMM-2_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IMM-2_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>IMM-2_Footnote</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HCP_Measure_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HCP_Measure_Description]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HCP_Measure_Description</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HCP_%</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HCP_%]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HCP_%</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HCP_Numerator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HCP_Numerator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HCP_Numerator</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HCP_Denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HCP_Denominator]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HCP_Denominator</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HCP_Footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HCP_Footnote]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>HCP_Footnote</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flu_Season_Start_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Flu_Season_Start_Date]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>Flu_Season_Start_Date</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flu_Season_End_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Flu_Season_End_Date]</local-name>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias>Flu_Season_End_Date</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Post-discharge care' datatype='string' name='[Calculation_609674809675677699]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF &#10;AVG([HBIPS-6_Overall_%_of_Total]) &gt; 80&#10;THEN&#10;&quot;Highest&quot;&#10;ELSEIF &#10;AVG([HBIPS-6_Overall_%_of_Total]) &gt; 60&#10;THEN&#10;&quot;High&quot;&#10;ELSEIF &#10;AVG([HBIPS-6_Overall_%_of_Total]) &gt; 40&#10;THEN&#10;&quot;Moderate&quot;&#10;ELSEIF&#10;AVG([HBIPS-6_Overall_%_of_Total]) &gt; 20&#10;THEN&#10;&quot;Low&quot;&#10;ELSE&#10;&quot;Lowest&quot;&#10;END' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='County Name' datatype='string' name='[County_Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='EHR Use Footnote' datatype='integer' hidden='true' name='[EHR_Use_Footnote]' role='measure' type='quantitative' />
+      <column caption='EHR Use Measure Description' datatype='string' hidden='true' name='[EHR_Use_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='EHR Use Response' datatype='string' hidden='true' name='[EHR_Use_Response]' role='dimension' type='nominal' />
+      <column caption='End Date' datatype='date' hidden='true' name='[End_Date]' role='dimension' type='ordinal' />
+      <column caption='Percent of patients receiving follow-up care within 30 days (FUH-30) or within 7 days (FUH-7) after hospitalization for mental illness' datatype='string' name='[FUH-30_%]' role='dimension' type='nominal' />
+      <column caption='FUH-30 Denominator' datatype='string' hidden='true' name='[FUH-30_Denominator]' role='dimension' type='nominal' />
+      <column caption='FUH-30 Footnote' datatype='integer' hidden='true' name='[FUH-30_Footnote]' role='measure' type='quantitative' />
+      <column caption='FUH-30 Numerator' datatype='string' hidden='true' name='[FUH-30_Numerator]' role='dimension' type='nominal' />
+      <column caption='Fuh-7 %' datatype='string' hidden='true' name='[FUH-7_%]' role='dimension' type='nominal' />
+      <column caption='FUH-7 Denominator' datatype='string' hidden='true' name='[FUH-7_Denominator]' role='dimension' type='nominal' />
+      <column caption='FUH-7 Footnote' datatype='integer' hidden='true' name='[FUH-7_Footnote]' role='measure' type='quantitative' />
+      <column caption='FUH-7 Numerator' datatype='string' hidden='true' name='[FUH-7_Numerator]' role='dimension' type='nominal' />
+      <column caption='FUH Measure Description' datatype='string' hidden='true' name='[FUH_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='FUH Measure End Date' datatype='date' hidden='true' name='[FUH_Measure_End_Date]' role='dimension' type='ordinal' />
+      <column caption='FUH Measure Start Date' datatype='date' hidden='true' name='[FUH_Measure_Start_Date]' role='dimension' type='ordinal' />
+      <column caption='Flu Season End Date' datatype='date' hidden='true' name='[Flu_Season_End_Date]' role='dimension' type='ordinal' />
+      <column caption='Flu Season Start Date' datatype='date' hidden='true' name='[Flu_Season_Start_Date]' role='dimension' type='ordinal' />
+      <column caption='HBIPS-2 Measure Description' datatype='string' hidden='true' name='[HBIPS-2_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='HBIPS-2 Overall Den' datatype='integer' hidden='true' name='[HBIPS-2_Overall_Den]' role='measure' type='quantitative' />
+      <column caption='HBIPS-2 Overall Footnote' datatype='integer' hidden='true' name='[HBIPS-2_Overall_Footnote]' role='measure' type='quantitative' />
+      <column caption='HBIPS-2 Overall Num' datatype='real' hidden='true' name='[HBIPS-2_Overall_Num]' role='dimension' type='ordinal' />
+      <column caption='Physical-restraint use\x0;ratio (hrs)' datatype='real' name='[HBIPS-2_Overall_Rate_Per_1000]' role='measure' type='quantitative' />
+      <column caption='HBIPS-3 Measure Description' datatype='string' hidden='true' name='[HBIPS-3_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='HBIPS-3 Overall Den' datatype='integer' hidden='true' name='[HBIPS-3_Overall_Den]' role='measure' type='quantitative' />
+      <column caption='HBIPS-3 Overall Footnote' datatype='integer' hidden='true' name='[HBIPS-3_Overall_Footnote]' role='measure' type='quantitative' />
+      <column caption='HBIPS-3 Overall Num' datatype='real' hidden='true' name='[HBIPS-3_Overall_Num]' role='dimension' type='ordinal' />
+      <column caption='Seclusion ratio (hrs)' datatype='real' name='[HBIPS-3_Overall_Rate_Per_1000]' role='measure' type='quantitative' />
+      <column caption='HBIPS-5 Measure Description' datatype='string' hidden='true' name='[HBIPS-5_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='% Patients discharged on multiple antipsychotic medications with appropriate justification\x0;' datatype='real' name='[HBIPS-5_Overall_%_of_Total]' role='measure' type='quantitative' />
+      <column caption='HBIPS-5 Overall Den' datatype='string' hidden='true' name='[HBIPS-5_Overall_Den]' role='dimension' type='nominal' />
+      <column caption='HBIPS-5 Overall Footnote' datatype='integer' hidden='true' name='[HBIPS-5_Overall_Footnote]' role='measure' type='quantitative' />
+      <column caption='HBIPS-5 Overall Num' datatype='string' hidden='true' name='[HBIPS-5_Overall_Num]' role='dimension' type='nominal' />
+      <column caption='HBIPS-6 Measure Description' datatype='string' hidden='true' name='[HBIPS-6_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='% Post discharge continuing care plan created' datatype='real' name='[HBIPS-6_Overall_%_of_Total]' role='measure' type='quantitative' />
+      <column caption='HBIPS-6 Overall Den' datatype='integer' hidden='true' name='[HBIPS-6_Overall_Den]' role='measure' type='quantitative' />
+      <column caption='HBIPS-6 Overall Footnote' datatype='integer' hidden='true' name='[HBIPS-6_Overall_Footnote]' role='measure' type='quantitative' />
+      <column caption='HBIPS-6 Overall Num' datatype='integer' hidden='true' name='[HBIPS-6_Overall_Num]' role='dimension' type='ordinal' />
+      <column caption='HBIPS-7 Measure Description' datatype='string' hidden='true' name='[HBIPS-7_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='% Post discharge continuing care plan transmitted to next level of careprovider upon discharge' datatype='real' name='[HBIPS-7_Overall_%_of_Total]' role='measure' type='quantitative' />
+      <column caption='HBIPS-7 Overall Den' datatype='integer' hidden='true' name='[HBIPS-7_Overall_Den]' role='measure' type='quantitative' />
+      <column caption='HBIPS-7 Overall Footnote' datatype='integer' hidden='true' name='[HBIPS-7_Overall_Footnote]' role='measure' type='quantitative' />
+      <column caption='HBIPS-7 Overall Num' datatype='integer' hidden='true' name='[HBIPS-7_Overall_Num]' role='dimension' type='ordinal' />
+      <column caption='Healthcare Personnel Influenza Vaccination\x0;' datatype='string' name='[HCP_%]' role='dimension' type='nominal' />
+      <column caption='HCP Denominator' datatype='string' hidden='true' name='[HCP_Denominator]' role='dimension' type='nominal' />
+      <column caption='HCP Footnote' datatype='integer' hidden='true' name='[HCP_Footnote]' role='measure' type='quantitative' />
+      <column caption='HCP Measure Description' datatype='string' hidden='true' name='[HCP_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='HCP Numerator' datatype='string' hidden='true' name='[HCP_Numerator]' role='dimension' type='nominal' />
+      <column caption='HIE Footnote' datatype='integer' hidden='true' name='[HIE_Footnote]' role='measure' type='quantitative' />
+      <column caption='HIE Measure Description' datatype='string' hidden='true' name='[HIE_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='HIE Response' datatype='string' hidden='true' name='[HIE_Response]' role='dimension' type='nominal' />
+      <column caption='Hospital Name' datatype='string' name='[Hospital_Name]' role='dimension' type='nominal' />
+      <column caption='Imm-2 %' datatype='string' hidden='true' name='[IMM-2_%]' role='dimension' type='nominal' />
+      <column caption='IMM-2 Denominator' datatype='string' hidden='true' name='[IMM-2_Denominator]' role='dimension' type='nominal' />
+      <column caption='IMM-2 Footnote' datatype='integer' hidden='true' name='[IMM-2_Footnote]' role='measure' type='quantitative' />
+      <column caption='IMM-2 Measure Description' datatype='string' hidden='true' name='[IMM-2_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='IMM-2 Numerator' datatype='string' hidden='true' name='[IMM-2_Numerator]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='PEoC Assessed Footnote' datatype='integer' hidden='true' name='[PEoC_Assessed_Footnote]' role='measure' type='quantitative' />
+      <column caption='PEoC Assessed Response' datatype='string' hidden='true' name='[PEoC_Assessed_Response]' role='dimension' type='nominal' />
+      <column caption='PEoC Measure Description' datatype='string' hidden='true' name='[PEoC_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='Provider Number' datatype='integer' name='[Provider_Number]' role='dimension' type='ordinal' />
+      <column caption='Sub-1 %' datatype='string' hidden='true' name='[SUB-1_%]' role='dimension' type='nominal' />
+      <column caption='SUB-1 Denominator' datatype='string' hidden='true' name='[SUB-1_Denominator]' role='dimension' type='nominal' />
+      <column caption='SUB-1 Footnote' datatype='integer' hidden='true' name='[SUB-1_Footnote]' role='measure' type='quantitative' />
+      <column caption='SUB-1 Measure Description' datatype='string' hidden='true' name='[SUB-1_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='SUB-1 Numerator' datatype='string' hidden='true' name='[SUB-1_Numerator]' role='dimension' type='nominal' />
+      <column caption='Start Date' datatype='date' hidden='true' name='[Start_Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tob-1 %' datatype='real' hidden='true' name='[TOB-1_%]' role='measure' type='quantitative' />
+      <column caption='TOB-1 Denominator' datatype='integer' hidden='true' name='[TOB-1_Denominator]' role='measure' type='quantitative' />
+      <column caption='TOB-1 Footnote' datatype='integer' hidden='true' name='[TOB-1_Footnote]' role='measure' type='quantitative' />
+      <column caption='TOB-1 Measure Description' datatype='string' hidden='true' name='[TOB-1_Measure_Description]' role='dimension' type='nominal' />
+      <column caption='TOB-1 Numerator' datatype='integer' hidden='true' name='[TOB-1_Numerator]' role='measure' type='quantitative' />
+      <column caption='TOB-2/-2a Denominator' datatype='string' hidden='true' name='[TOB-2/-2a_Denominator]' role='dimension' type='nominal' />
+      <column caption='TOB-2/-2a Measure Desc' datatype='string' hidden='true' name='[TOB-2/-2a_Measure_Desc]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[TOB-2/-2a__Denominator]' role='dimension' type='nominal' />
+      <column caption='Tob-2 %' datatype='string' hidden='true' name='[TOB-2_%]' role='dimension' type='nominal' />
+      <column caption='TOB-2 Footnote' datatype='integer' hidden='true' name='[TOB-2_Footnote]' role='measure' type='quantitative' />
+      <column caption='TOB-2 Numerator' datatype='string' hidden='true' name='[TOB-2_Numerator]' role='dimension' type='nominal' />
+      <column caption='TOB-2a %' datatype='string' hidden='true' name='[TOB-2a_%]' role='dimension' type='nominal' />
+      <column caption='TOB-2a Footnote' datatype='integer' hidden='true' name='[TOB-2a_Footnote]' role='measure' type='quantitative' />
+      <column caption='TOB-2a Numerator' datatype='string' hidden='true' name='[TOB-2a_Numerator]' role='dimension' type='nominal' />
+      <column caption='ZIP Code' datatype='integer' default-format='*00000' name='[ZIP_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Avg' name='[avg:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Sum' name='[sum:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HBIPS-6_Overall_%_of_Total]' derivation='Sum' name='[sum:HBIPS-6_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Hospital Name)' hidden='true' name='[Action (Hospital Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Hospital_Name]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.501832' measure-ordering='alphabetic' measure-percentage='0.498168' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_\%_of_Total:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-5_Overall_\%_of_Total:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-6_Overall_\%_of_Total:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Summary of Metrics' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='% Discharge of Patients on Multiple Anti-Psychotics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='% Patients discharged on multiple antipsychotic medications with appropriate justification\x0;' datatype='real' name='[HBIPS-5_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column caption='Hospital Name' datatype='string' name='[Hospital_Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='Attribute' name='[attr:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Avg' name='[avg:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hospital_Name]' derivation='None' name='[none:Hospital_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Sum' name='[sum:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[attr:State:nk]'>
+            <groupfilter function='member' level='[attr:State:nk]' member='&quot;PA&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Hospital_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]' direction='DESC' using='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-5_Overall_%_of_Total:qk]' />
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[attr:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' num-steps='5' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' />
+              <tooltip column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[attr:State:nk]' />
+              <text column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='208' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-5_Overall_%_of_Total:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='% Patients with Post-Discharge Continuing Care Plan'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='County Name' datatype='string' name='[County_Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='% Post discharge continuing care plan created' datatype='real' name='[HBIPS-6_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column caption='Hospital Name' datatype='string' name='[Hospital_Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[HBIPS-6_Overall_%_of_Total]' derivation='Avg' name='[avg:HBIPS-6_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[County_Name]' derivation='None' name='[none:County_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hospital_Name]' derivation='None' name='[none:Hospital_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HBIPS-6_Overall_%_of_Total]' derivation='Sum' name='[sum:HBIPS-6_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk]'>
+            <groupfilter function='level-members' level='[none:County_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Hospital_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]' direction='DESC' using='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-6_Overall_%_of_Total:qk]' />
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' num-steps='5' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' />
+              <tooltip column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' />
+              <text column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk] / [federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk])</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-6_Overall_%_of_Total:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='African American Population and Post-discharge Plan'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='County Name' datatype='string' name='[County_Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='% Post discharge continuing care plan created' datatype='real' name='[HBIPS-6_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[HBIPS-6_Overall_%_of_Total]' derivation='Avg' name='[avg:HBIPS-6_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[County_Name]' derivation='None' name='[none:County_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]' field-type='quantitative' max='-8029916.984928946' min='-14387525.490442704' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]' field-type='quantitative' max='8475611.470373705' min='2269097.8653566185' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' num-steps='5' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+            <format attr='enabled' id='181657' value='false' />
+            <format attr='enabled' id='181658' value='false' />
+            <format attr='enabled' id='181686' value='false' />
+            <format attr='enabled' id='181708' value='false' />
+            <format attr='enabled' id='181730' value='false' />
+            <format attr='enabled' id='181732' value='false' />
+            <format attr='enabled' id='181795' value='false' />
+            <format attr='enabled' id='181796' value='false' />
+            <format attr='enabled' id='181794' value='true' />
+            <format attr='enabled' id='181866' value='false' />
+            <format attr='enabled' id='181797' value='false' />
+            <format attr='enabled' id='181793' value='false' />
+            <format attr='enabled' id='181799' value='false' />
+            <format attr='enabled' id='181798' value='false' />
+            <format attr='enabled' id='182057' value='false' />
+            <format attr='enabled' id='182484' value='false' />
+            <format attr='enabled' id='182485' value='false' />
+            <format attr='enabled' id='182486' value='false' />
+            <format attr='enabled' id='181661' value='false' />
+            <format attr='enabled' id='181662' value='false' />
+            <format attr='enabled' id='181951' value='false' />
+            <format attr='enabled' id='182071' value='false' />
+            <format attr='enabled' id='182099' value='false' />
+            <format attr='enabled' id='181665' value='false' />
+            <format attr='enabled' id='181666' value='false' />
+            <format attr='enabled' id='182041' value='false' />
+            <format attr='enabled' id='182048' value='false' />
+            <format attr='enabled' id='182002' value='false' />
+            <format attr='enabled' id='182003' value='false' />
+            <format attr='enabled' id='181943' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='County' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk]' />
+              <geometry column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Discharge with Multiple Antipsychotic Medications'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='% Patients discharged on multiple antipsychotic medications with appropriate justification\x0;' datatype='real' name='[HBIPS-5_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Avg' name='[avg:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' direction='DESC' using='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Physical restraint by state'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='Physical-restraint use\x0;ratio (hrs)' datatype='real' name='[HBIPS-2_Overall_Rate_Per_1000]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[HBIPS-2_Overall_Rate_Per_1000]' derivation='Avg' name='[avg:HBIPS-2_Overall_Rate_Per_1000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]' field-type='quantitative' max='-6935684.9777441211' min='-15345278.458849203' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]' field-type='quantitative' max='6772936.6412971355' min='578836.06349008298' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-2_Overall_Rate_Per_1000:qk]' num-steps='5' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-2_Overall_Rate_Per_1000:qk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' />
+              <geometry column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Seclusion Rate By State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='Seclusion ratio (hrs)' datatype='real' name='[HBIPS-3_Overall_Rate_Per_1000]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[HBIPS-3_Overall_Rate_Per_1000]' derivation='Median' name='[med:HBIPS-3_Overall_Rate_Per_1000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[med:HBIPS-3_Overall_Rate_Per_1000:qk]' num-steps='3' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[med:HBIPS-3_Overall_Rate_Per_1000:qk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' />
+              <geometry column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='States Most Likely to Discharge Patients on Multiple Antipsychotics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='% Patients discharged on multiple antipsychotic medications with appropriate justification\x0;' datatype='real' name='[HBIPS-5_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Avg' name='[avg:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]' field-type='quantitative' max='-6508841.8838410284' min='-16515973.370582059' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]' field-type='quantitative' max='7464881.549463965' min='96099.479087874177' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' num-steps='5' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' />
+              <lod column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' />
+              <geometry column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Latitude (generated)]</rows>
+        <cols>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Summary of Metrics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+            <column caption='SUM([% Post discharge continuing care plan created]) * 100' datatype='real' name='[Calculation_609674809668669440]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='SUM([HBIPS-6_Overall_%_of_Total]) * 100' />
+            </column>
+            <column caption='County Name' datatype='string' name='[County_Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Physical-restraint use\x0;ratio (hrs)' datatype='real' name='[HBIPS-2_Overall_Rate_Per_1000]' role='measure' type='quantitative' />
+            <column caption='Seclusion ratio (hrs)' datatype='real' name='[HBIPS-3_Overall_Rate_Per_1000]' role='measure' type='quantitative' />
+            <column caption='% Patients discharged on multiple antipsychotic medications with appropriate justification\x0;' datatype='real' name='[HBIPS-5_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column caption='% Post discharge continuing care plan created' datatype='real' name='[HBIPS-6_Overall_%_of_Total]' role='measure' type='quantitative' />
+            <column caption='Hospital Name' datatype='string' name='[Hospital_Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[County_Name]' derivation='None' name='[none:County_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hospital_Name]' derivation='None' name='[none:Hospital_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HBIPS-2_Overall_Rate_Per_1000]' derivation='Sum' name='[sum:HBIPS-2_Overall_Rate_Per_1000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HBIPS-3_Overall_Rate_Per_1000]' derivation='Sum' name='[sum:HBIPS-3_Overall_Rate_Per_1000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HBIPS-5_Overall_%_of_Total]' derivation='Sum' name='[sum:HBIPS-5_Overall_%_of_Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_609674809668669440]' derivation='User' name='[usr:Calculation_609674809668669440:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[Action (Hospital Name)]'>
+            <groupfilter function='level-members' level='[Hospital_Name]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk]'>
+            <groupfilter function='level-members' level='[none:County_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Hospital_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]' direction='DESC' using='[federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk]' />
+          <filter class='categorical' column='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;PA&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk]</column>
+            <column>[federated.087rvj91gvdcf814ygl9r1oirbcb].[Action (Hospital Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-5_Overall_%_of_Total:qk]' value='55' />
+            <format attr='height' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk]' value='55' />
+            <format attr='title' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk]' scope='cols' value='Post discharge continuing care created' />
+            <format attr='subtitle' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk]' scope='cols' value='true' />
+            <format attr='title' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-2_Overall_Rate_Per_1000:qk]' scope='cols' value='Physical-restraint use ratio (hrs)' />
+            <format attr='subtitle' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-2_Overall_Rate_Per_1000:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-2_Overall_Rate_Per_1000:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-5_Overall_%_of_Total:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-2_Overall_Rate_Per_1000:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-3_Overall_Rate_Per_1000:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:Hospital_Name:nk]</rows>
+        <cols>([federated.087rvj91gvdcf814ygl9r1oirbcb].[usr:Calculation_609674809668669440:qk] + ([federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-5_Overall_%_of_Total:qk] + ([federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-2_Overall_Rate_Per_1000:qk] + [federated.087rvj91gvdcf814ygl9r1oirbcb].[sum:HBIPS-3_Overall_Rate_Per_1000:qk])))</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+        <column caption='County Name' datatype='string' name='[County_Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[County_Name]' derivation='None' name='[none:County_Name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' param='horz' type='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' type='layout-basic' w='82400' x='800' y='1000'>
+                <zone h='98000' id='1' name='Summary of Metrics' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='6500' id='8' mode='dropdown' name='Summary of Metrics' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:State:nk]' type='filter' values='all' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='dropdown' name='Summary of Metrics' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[none:County_Name:nk]' type='filter' values='all' w='16000' x='83200' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Inpatient_Psychiatric_Facility_Quality_Measure_Data___by_Facility' name='federated.087rvj91gvdcf814ygl9r1oirbcb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.087rvj91gvdcf814ygl9r1oirbcb'>
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[State]' derivation='Attribute' name='[attr:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='1' name='% Discharge of Patients on Multiple Anti-Psychotics' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8125' id='6' name='% Discharge of Patients on Multiple Anti-Psychotics' pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' type='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='7' mode='dropdown' name='% Discharge of Patients on Multiple Anti-Psychotics' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[attr:State:nk]' type='filter' w='16000' x='83200' y='9125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Summary of Metrics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Summary of Metrics' />
+      </viewpoints>
+      <active id='8' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='% Discharge of Patients on Multiple Anti-Psychotics' />
+      </viewpoints>
+      <active id='7' />
+    </window>
+    <window class='worksheet' name='% Patients with Post-Discharge Continuing Care Plan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' maximized='true' name='% Discharge of Patients on Multiple Anti-Psychotics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Physical restraint by state'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-2_Overall_Rate_Per_1000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='African American Population and Post-discharge Plan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' type='map' />
+            <card pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-6_Overall_%_of_Total:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='States Most Likely to Discharge Patients on Multiple Antipsychotics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[avg:HBIPS-5_Overall_%_of_Total:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Seclusion Rate By State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.087rvj91gvdcf814ygl9r1oirbcb].[med:HBIPS-3_Overall_Rate_Per_1000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Discharge with Multiple Antipsychotic Medications'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>
